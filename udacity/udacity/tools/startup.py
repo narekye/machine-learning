@@ -44,4 +44,5 @@ os.chdir("..")
 tfile = tarfile.open("enron_mail_20150507.tar.gz", "r:gz")
 tfile.extractall(".")
 
+print("extraced all, please check")
 print ("you're ready to go!")
