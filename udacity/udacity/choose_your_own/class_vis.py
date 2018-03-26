@@ -3,6 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pylab as pl
+import matplotlib.image as mtimg
 
 def prettyPicture(clf, X_test, y_test, picName):
     x_min = 0.0; x_max = 1.0
@@ -33,7 +34,7 @@ def prettyPicture(clf, X_test, y_test, picName):
     plt.legend()
     plt.xlabel("bumpiness")
     plt.ylabel("grade")
-
+    
     plt.savefig("../udacity/data/" + picName)
 
 import base64
@@ -48,4 +49,8 @@ def output_image(name, format, bytes):
     data['format'] = format
     data['bytes'] = base64.encodestring(bytes)
     print (image_start+json.dumps(data)+image_end)
+
+def show_img(path):
+    img = mtimg.imread("../udacity/data/" + path)
+    plt.show()
                                     

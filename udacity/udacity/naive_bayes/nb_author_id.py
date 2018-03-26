@@ -38,7 +38,7 @@ prediction = classifier.predict(features_test)
 
 accuracy = metrics.accuracy_score(labels_test, prediction)
 
-print(accuracy)
+print(accuracy) 
 
 # prettyPicture(classifier, features_test, labels_test, pictureName)
 

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>20429f12-7eba-4ec1-8058-6b493c6e566d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>naive_bayes/terrain_data_nb.py</StartupFile>
+    <StartupFile>svm/svm_author_id.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -50,7 +50,16 @@
     <Compile Include="pca\eigenfaces.py" />
     <Compile Include="regression\finance_regression.py" />
     <Compile Include="svm\svm_author_id.py" />
+    <Compile Include="svm\svm_with_rbf.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="svm\terrain_data_svm.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="text_learning\vectorize_text.py" />
+    <Compile Include="tools\clear.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="tools\email_preprocess.py" />
     <Compile Include="tools\feature_format.py" />
     <Compile Include="tools\parse_out_email_text.py" />
