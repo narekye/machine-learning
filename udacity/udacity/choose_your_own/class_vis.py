@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pylab as pl
 
-def prettyPicture(clf, X_test, y_test):
+def prettyPicture(clf, X_test, y_test, picName):
     x_min = 0.0; x_max = 1.0
     y_min = 0.0; y_max = 1.0
     
@@ -12,7 +12,8 @@ def prettyPicture(clf, X_test, y_test):
     # point in the mesh [x_min, m_max]x[y_min, y_max].
     h = .01  # step size in the mesh
     xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
-    Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])
+    ravels = np.c_[xx.ravel(), yy.ravel()]
+    Z = clf.predict(ravels)
 
     # Put the result into a color plot
     Z = Z.reshape(xx.shape)
@@ -33,7 +34,7 @@ def prettyPicture(clf, X_test, y_test):
     plt.xlabel("bumpiness")
     plt.ylabel("grade")
 
-    plt.savefig("test.png")
+    plt.savefig("../udacity/data/" + picName)
 
 import base64
 import json

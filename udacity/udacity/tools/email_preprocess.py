@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import pickle
-import cPickle
+import _pickle as cPickle
 import numpy
 
 from sklearn import cross_validation
@@ -10,7 +10,7 @@ from sklearn.feature_selection import SelectPercentile, f_classif
 
 
 
-def preprocess(words_file = "../tools/word_data.pkl", authors_file="../tools/email_authors.pkl"):
+def preprocess(words_file = "../udacity/tools/word_data.pkl", authors_file="../udacity/tools/email_authors.pkl"):
     """ 
         this function takes a pre-made list of email texts (by default word_data.pkl)
         and the corresponding authors (by default email_authors.pkl) and performs
@@ -29,11 +29,11 @@ def preprocess(words_file = "../tools/word_data.pkl", authors_file="../tools/ema
 
     ### the words (features) and authors (labels), already largely preprocessed
     ### this preprocessing will be repeated in the text learning mini-project
-    authors_file_handler = open(authors_file, "r")
+    authors_file_handler = open(authors_file, "rb")
     authors = pickle.load(authors_file_handler)
     authors_file_handler.close()
 
-    words_file_handler = open(words_file, "r")
+    words_file_handler = open(words_file, "rb")
     word_data = cPickle.load(words_file_handler)
     words_file_handler.close()
 

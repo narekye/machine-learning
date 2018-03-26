@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>20429f12-7eba-4ec1-8058-6b493c6e566d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>tools/startup.py</StartupFile>
+    <StartupFile>naive_bayes/terrain_data_nb.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -12,6 +12,7 @@
     <Name>udacity</Name>
     <RootNamespace>udacity</RootNamespace>
     <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,8 +33,17 @@
     <Compile Include="final_project\poi_email_addresses.py" />
     <Compile Include="final_project\poi_id.py" />
     <Compile Include="final_project\tester.py" />
+    <Compile Include="helpers\image_reader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="helpers\unix_converter.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="k_means\k_means_cluster.py" />
     <Compile Include="naive_bayes\nb_author_id.py" />
+    <Compile Include="naive_bayes\terrain_data_nb.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="outliers\enron_outliers.py" />
     <Compile Include="outliers\outlier_cleaner.py" />
     <Compile Include="outliers\outlier_removal_regression.py" />
@@ -55,8 +65,10 @@
     <Folder Include="feature_selection\" />
     <Folder Include="final_project\" />
     <Folder Include="final_project\emails_by_address\" />
+    <Folder Include="helpers\" />
     <Folder Include="k_means\" />
     <Folder Include="naive_bayes\" />
+    <Folder Include="data\" />
     <Folder Include="outliers\" />
     <Folder Include="pca\" />
     <Folder Include="regression\" />
@@ -5762,6 +5774,9 @@
     <Content Include="validation\venv\tcl\tk8.5\ttk\xpTheme.tcl" />
     <Content Include="validation\venv\tcl\tk8.5\unsupported.tcl" />
     <Content Include="validation\venv\tcl\tk8.5\xmfbox.tcl" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
