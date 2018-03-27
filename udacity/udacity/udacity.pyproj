@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>20429f12-7eba-4ec1-8058-6b493c6e566d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>svm/svm_author_id.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,6 +29,9 @@
     <Compile Include="choose_your_own\your_algorithm.py" />
     <Compile Include="datasets_questions\explore_enron_data.py" />
     <Compile Include="decision_tree\dt_author_id.py" />
+    <Compile Include="decision_tree\dt_author_id_accuracies.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="evaluation\evaluate_poi_identifier.py" />
     <Compile Include="feature_selection\find_signature.py" />
     <Compile Include="final_project\poi_email_addresses.py" />

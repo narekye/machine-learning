@@ -1,3 +1,4 @@
+
 #!/usr/bin/python
 """ 
     This is the code to accompany the Lesson 3 (decision tree) mini-project.
@@ -33,17 +34,13 @@ clear()
 
 print("Start execution")
 
-
-
+# min_samples_split = 50
 classifier = tree.DecisionTreeClassifier(min_samples_split=50)
 classifier.fit(features_train, labels_train)
 
-pictureName = "decision_tree_classifier_bigger.png"
-
 prediction = classifier.predict(features_test)
 
-if classifier.min_samples_split != 2:
-    pictureName = "decision_tree_classifier_bigger.png"
+pictureName = "decision_tree_classifier_bigger.png"
 
 accuracy = accuracy_score(labels_test ,prediction)
 
@@ -54,5 +51,3 @@ prettyPicture(classifier, features_test, labels_test, pictureName)
 show_img(pictureName)
 
 #########################################################
-
-

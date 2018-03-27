@@ -13,7 +13,7 @@ features_train, features_test, labels_train, labels_test = preprocess()
 #########################################################
 ### your code goes here ###
 
-from sklearn.svm import SVC # Support Vector Machine
+from sklearn.svm import SVC # Support Vector Classifier / Machine
 from sklearn import metrics
 
 classifier = SVC(kernel="rbf")
