@@ -23,6 +23,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="adaboost\adaboost.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="choose_your_own\class_vis.py" />
     <Compile Include="choose_your_own\prep_terrain_data.py" />
     <Compile Include="choose_your_own\your_algorithm.py" />
@@ -43,6 +46,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="k_means\k_means_cluster.py" />
+    <Compile Include="k_nearest_neighbors\k_nearest_neighbors.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="naive_bayes\nb_author_id.py" />
     <Compile Include="naive_bayes\terrain_data_nb.py">
       <SubType>Code</SubType>
@@ -51,6 +57,9 @@
     <Compile Include="outliers\outlier_cleaner.py" />
     <Compile Include="outliers\outlier_removal_regression.py" />
     <Compile Include="pca\eigenfaces.py" />
+    <Compile Include="random_forest\random_forest.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="regression\finance_regression.py" />
     <Compile Include="svm\svm_author_id.py" />
     <Compile Include="svm\svm_with_rbf.py">
@@ -81,6 +90,9 @@
     <Folder Include="k_means\" />
     <Folder Include="naive_bayes\" />
     <Folder Include="data\" />
+    <Folder Include="k_nearest_neighbors\" />
+    <Folder Include="adaboost\" />
+    <Folder Include="random_forest\" />
     <Folder Include="outliers\" />
     <Folder Include="pca\" />
     <Folder Include="regression\" />
