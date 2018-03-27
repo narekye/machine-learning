@@ -2,19 +2,19 @@
 Introduction to machine learning using Python.
 --
 
-# first chapter - Intro to pandas
+# Supervised learning algorithms
 
-Basic concepts
+> Attention: In all supervised learning algorithms used the same data.
 
-```python
-
-import pandas as pd
-pd.__version__
-
-```
-
-The primary data structures in pandas are implemented as two classes: </br>
-
-DataFrame, which you can imagine as a relational data table, with rows and named columns.
-Series, which is a single column. A DataFrame contains one or more Series and a name for each Series.
-The data frame is a commonly used abstraction for data manipulation. Similar implementations exist in Spark and R.
+--
+[Naive Bayes code samples](https://github.com/narekye/machine-learning/tree/master/udacity/udacity/naive_bayes)
+> #### Naive Bayes documentation [sklearn package](http://scikit-learn.org/stable/modules/naive_bayes.html)
+## Naive Bayes example in test data. 
+<img src="https://github.com/narekye/machine_learning/tree/master/udacity/udacity/data/naive_bayes_classifier.png" align="right" width="250px" height="250px" />
+--
+[SVM (Support vector machine) code samples](https://github.com/narekye/machine-learning/tree/master/udacity/udacity/svm)
+> #### SVM (support vector machine documentation) [sklearn package](http://scikit-learn.org/stable/modules/svm.html)
+## Support vector machine example on test data.
+<img src="https://github.com/narekye/machine_learning/tree/master/udacity/udacity/data/svm.png" align="right" width="250px" height="250px" />
+--
+[Decision Tree]()

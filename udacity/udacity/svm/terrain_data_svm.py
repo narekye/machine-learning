@@ -19,7 +19,7 @@ clear()
 # C makes more training points correct 
 # Gamma makes decision boundaries much closer or much far
 
-classifier = SVC(kernel="rbf",C=10000) 
+classifier = SVC(kernel="linear",C=1) 
 classifier.fit(features_train, labels_train)
 
 prediction = classifier.predict(features_test)
@@ -28,7 +28,7 @@ accuracy = metrics.accuracy_score(labels_test, prediction)
 
 print(accuracy)
 
-pictureName = "svm_rbf.png"
+pictureName = "svm.png"
 
 prettyPicture(classifier, features_test, labels_test, pictureName)
 
