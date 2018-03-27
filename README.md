@@ -49,7 +49,7 @@ The simplest kind of DNN is
 a [Multilayer Perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)
 (MLP).
 
-<div style="text-align:center"><img src ="https://github.com/off99555/machine-learning-curriculum/blob/master/img/Brain-549603035-1.jpg" /></div>
+<div style="text-align:center"><img src ="https://github.com/off99555/machine-learning-curriculum/blob/master/img/Brain-549603035-1.jpg" />
 
 # Supervised learning algorithms 
 
